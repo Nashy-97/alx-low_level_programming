@@ -3,11 +3,12 @@
 #include <stdio.h>
 /**
  * main - assigns  random number to a variable whenever its executed
- * Return: Always (success)
+ * Return: Always 0 (success)
  */
 int main(void)
 {
-	int n, lastd;
+	int n;
+	int lastd;
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
