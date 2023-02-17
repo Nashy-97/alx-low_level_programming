@@ -1,16 +1,20 @@
 #include <stdio.h>
-#include <stdlib.h>
-#include <time.h>
+#include <unistd.h>
 /**
  * main - entry point
  * Return: Always 0 (success)
  */
 int main(void)
 {
-	int d;
+	int c;
 
-	for (d = '0'; d <= 9; d++)
-		putchar(d);
+	c = 0;
+	while
+		(c < 10)
+		{
+			putchar(c + '0');
+			c++;
+		}
 	putchar('\n');
 	return (0);
 }
