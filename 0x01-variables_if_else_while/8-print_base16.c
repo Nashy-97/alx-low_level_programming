@@ -6,19 +6,13 @@
  */
 int main(void)
 {
-	char c;
+	char low;
 	int d;
 
-	while (d < 10)
-	{
+	for (d = '0'; d <= 9; d++)
 		putchar(d + '0');
-		d++;
-	}
-	while (c <= 'f')
-	{
-		putchar(c);
-		c++;
-	}
+	for (low = 'a'; low <= 'f'; low++)
+		putchar(low);
 	putchar('\n');
 	return (0);
 }
