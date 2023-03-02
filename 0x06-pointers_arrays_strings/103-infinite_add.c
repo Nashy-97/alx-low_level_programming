@@ -1,5 +1,4 @@
 #include "main.h"
-
 /**
  * infinite_add -  adds two numbers
  * @n1: first number
@@ -7,10 +6,12 @@
  * @r: result
  * @size_r: result lenght
  * Return: sum
+ *
  */
-
 char *infinite_add(char *n1, char *n2, char *r, int size_r)
+
 {
+	/* local variable declaration */
 	int i = 0, j = 0, k, l = 0, f, s, d = 0;
 
 	while (n1[i] != '\0')
