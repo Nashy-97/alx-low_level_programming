@@ -1,7 +1,8 @@
 #include <stdio.h>
+
 /**
- * main - correcting the program
- * Return: void
+ * main - program correction
+ * Return: 0 Always
  */
 
 int main(void)
