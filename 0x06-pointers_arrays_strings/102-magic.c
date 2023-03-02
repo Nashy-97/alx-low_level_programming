@@ -1,10 +1,5 @@
 #include <stdio.h>
 
-/**
- * main - program correction
- * Return: 0 Always
- */
-
 int main(void)
 {
 int n;
