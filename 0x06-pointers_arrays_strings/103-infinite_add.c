@@ -6,7 +6,7 @@
  * @n2: second number
  * @r: result
  * @size_r: result lenght
- * Return: sum
+ * Return: sum of numbers
  */
 
 char *infinite_add(char *n1, char *n2, char *r, int size_r)
