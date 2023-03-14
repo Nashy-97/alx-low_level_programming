@@ -2,41 +2,30 @@
 #include <stdlib.h>
 
 /**
- * string_nconcat - concatenates two strings.
- * @s1: first string
- * @s2: second string
- * @n: number of bytes
- * Return: pointer to a newly allocated space in memory
- * NULL, If the function fails
+ * _strdup - duplicates a string.
+ * @str: the source string
+ *
+ * Return: returns a pointer to the duplicated string.
+ * It returns NULL if insufficient memory was available
  */
-
-char *string_nconcat(char *s1, char *s2, unsigned int n)
+char *_strdup(char *str)
 {
-	char *a;
-	int i;
-	unsigned int j;
+	char *copy;
+	int i, len = 0;
 
-	if (s1 == NULL)
-		s1 = "";
-	if (s2 == NULL)
-		s2 = "";
-	i = 0;
-	while (s1[i] != '\0')
-		i++;
-	a = malloc(sizeof(char) * (i + n + 1));
-	if (a == NULL)
+	if (str == NULL)
 		return (NULL);
-	i = j = 0;
-	while (s1[i] != '\0')
-	{
-		a[i] = s1[i];
-		i++;
-	}
-	while (j < n && s2[j] != '\0')
-	{
-		a[i] = s2[j];
-		i++, j++;
-	}
-	a[i] = '\0';
-	return (a);
+
+	while (str[len] != '\0')
+		len++;
+
+	copy = (char *)malloc((sizeof(char) * len) + 1);
+	if (copy == NULL)
+		return (NULL);
+
+	for (i = 0; i < len; i++)
+		copy[i] = str[i];
+	copy[len] = '\0';
+
+	return (copy);
 }
